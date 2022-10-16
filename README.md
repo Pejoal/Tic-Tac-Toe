@@ -4,7 +4,7 @@
 
 ### Using JavaScript
 
-- [Live Demo](https://pejoal.000webhostapp.com/Tic-Tac-Toe/)
+- [Live Demo](https://pejoal.000webhostapp.com/XO/)
 
 ### Clone
 
