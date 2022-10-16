@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #444;
+  color: #ddd;
+  overflow-x: hidden;
+}
+
+h1:first-of-type {
+  text-align: center;
+  margin: 1rem auto;
+  color: #fff;
+  border-bottom: 0.1rem solid #eee;
+  width: fit-content;
+}
+
+main {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+main > * {
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  background-color: #222;
+  padding: 1rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease transform;
+  border-radius: 1.5rem;
+}
+
+main > *:hover {
+  transform: scale(1.1);
+}
+
+main > *.disabled {
+  pointer-events: none;
+}
+
+output {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ddd;
+  color: #34f;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  transition-property: color, transform;
+}
+
+output:hover {
+  color: #11f;
+  transform: scale(1.1);
+}
+
+main ~ button {
+  cursor: pointer;
+  display: block;
+  padding: 0.4rem 1rem;
+  margin: 1rem auto;
+  font-size: 2rem;
+  color: #ddd;
+  background-color: #333;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+  transition-property: color, transform;
+}
+
+main ~ button:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+main ~ button:focus-within {
+  outline: none;
+}
+
+a {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ddd;
+  transition: 0.3s ease;
+  transition-property: color, transform;
+}
+
+a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    margin: 1rem auto;
+    width: calc(70% + 3vh);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    width: calc(50% + 3vh);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    width: calc(40% + 1vh);
+  }
+}
