@@ -12,7 +12,17 @@
 
 `cd Tic-Tac-Toe`
 
-## Skills
+### Built with
+
+- HTML 5
+- CSS 3
+- JavaScript [ECMA 2015]
+
+## Authors
+
+- [@pejaol](https://www.github.com/pejoal)
+
+## My Skills
 
 - HTML 5
 - CSS 3
@@ -36,16 +46,6 @@
 - GitHub
 - Linux
 - Terminal
-
-### Built with
-
-- HTML 5
-- CSS 3
-- JavaScript [ECMA 2015]
-
-## Authors
-
-- [@pejaol](https://www.github.com/pejoal)
 
 ## Related
 
